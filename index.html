@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineflix.movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/png" href="images/logo.jpg">
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">CINEFLIX</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="series.html">Series</a>
+            <a href="#">My Lists</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Stranger Things</h2>
+            <h4>Season 5</h4>
+            
+            <p>In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits.
+                 As they search for answers, the children unravel a series of extraordinary mysteries.</p>
+           <div class="hero-button">
+               <button class="btn-play">Watch Now</button>
+               <button class="btn-info" onclick="openseries('strangerThings')" >More info</button>
+           </div>
+        </div>
+    </section>
+
+    <section class="movie-section">
+        <div class="section-header">
+            <h3>Popular Movies</h3>
+            <a href="movies.html" class="see-all">See All</a>
+        </div>
+       
+        <br>
+        <div class="movie-row">
+
+            <div class="movie-card" onclick="openModal('interstellar')">
+                <div class="movie-image"><img src="images/interstellar.jpg" alt="">
+                     <div class="movie-overlay">
+                   <span class="play-icon">▶</span>
+                 </div>                
+                </div>
+                
+                <div class="movie-info">
+                    <h4>Interstellar</h4>
+                    <span>2014</span>
+                </div>
+            </div>
+            
+
+            <div class="movie-card" onclick="openModal('oppenheimer')">
+                <div class="movie-image"><img src="images/openheimer.jpg" alt="">
+                <div class="movie-overlay">
+                   <span class="play-icon">▶</span>
+                 </div>
+                </div>
+                
+                <div class="movie-info">
+                    <h4>Oppenheimer</h4>
+                    <span>2023</span>
+                </div>
+            </div>
+
+            <div class="movie-card" onclick="openModal('avengersEndgame')">
+                <div class="movie-image"><img src="images/avengers.jpg" alt="">
+                <div class="movie-overlay">
+                   <span class="play-icon">▶</span>
+                 </div>
+                
+                </div>
+                
+                <div class="movie-info">
+                    <h4>Avengers:End Game</h4>
+                    <span>2019</span>
+                </div>
+            </div>
+            
+            <div class="movie-card" onclick="openModal('msDhoniUntoldStory')">
+                <div class="movie-image"><img src="images/msdhoni-untoldstory.jpg" alt="">
+                <div class="movie-overlay">
+                   <span class="play-icon">▶</span>
+                 </div>
+                
+                </div>
+                
+                <div class="movie-info">
+                    <h4>MS Dhoni:The Untold Story</h4>
+                    <span>2016</span>
+                </div>
+            </div>
+            
+            <div class="movie-card" onclick="openModal('avatarTheWayOfWater')">
+                <div class="movie-image"><img src="images/avatar.jpg" alt="">
+                <div class="movie-overlay">
+                   <span class="play-icon">▶</span>
+                 </div>
+                </div>
+                
+                <div class="movie-info">
+                    <h4>Avatar:The Way Of Water</h4>
+                    <span>2022</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="movie-section">
+        <div class="section-header">
+            <h3>Trending Now</h3>
+            <a href="series.html" class="see-all">See All</a>
+        </div>
+       
+        <br>
+        <div class="movie-row">
+
+            <div class="movie-card" onclick="openseries('moneyHeist')">
+                <div class="movie-image"><img src="images/moneyheist.jpg" alt="">
+                <div class="movie-overlay">
+                   <span class="play-icon">▶</span>
+                 </div>
+                </div>
+                <div class="movie-info">
+                    <h4>Money Heist</h4>
+                    <span>2017</span>
+                </div>
+            </div>
+            
+            <div class="movie-card" onclick="openseries('wednesday')">
+            <div class="movie-image"><img src="images/wednesday.jpg" alt="">
+            <div class="movie-overlay">
+                   <span class="play-icon">▶</span>
+                 </div>
+            </div>
+                <div class="movie-info">
+                    <h4>Wednesday</h4>
+                    <span>2022</span>
+                </div>
+            </div>
+
+            <div class="movie-card" onclick="openseries('breakingBad')">
+                <div class="movie-image"><img src="images/breaking-bad.jpg" alt="">
+                <div class="movie-overlay">
+                   <span class="play-icon">▶</span>
+                 </div>
+                
+                </div>
+                
+                <div class="movie-info">
+                    <h4>Breaking Bad</h4>
+                    <span>2008</span>
+                </div>
+            </div>
+
+            <div class="movie-card" onclick="openseries('squidGame')">
+                <div class="movie-image"><img src="images/squidgame.jpg" alt="">
+                <div class="movie-overlay">
+                   <span class="play-icon">▶</span>
+                 </div>
+                </div>
+                
+                <div class="movie-info">
+                    <h4>Squid Game</h4>
+                    <span>2021</span>
+                </div>
+            </div>
+
+            <div class="movie-card" onclick="openseries('dark')">
+                <div class="movie-image"><img src="images/dark.jpg" alt="">
+                <div class="movie-overlay">
+                   <span class="play-icon">▶</span>
+                 </div>
+                </div>
+                
+                <div class="movie-info">
+                    <h4>Dark</h4>
+                    <span>2017</span>
+             </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="s-modal" id="s-moviemodal">
+        <div class="s-modal-content">
+
+            <span class="s-close-btn" onclick="closeseriesModal()">x</span>
+
+            <h2 id="s-modaltitle"></h2>
+            <br>
+            <h4 id="s-year"></h4>
+            <h4 id="s-genre"></h4>
+            <h4 id="director"></h4>
+            <h4 id="season"></h4>
+            <br>
+            <p id="episodes"></p>
+            <br> 
+            <h4 id="s-imdb"></h4>
+            <br>
+            <p id="s-overview"></p>
+
+            <div class="s-modal-actions">
+               <button class="s-modal-play-btn">▶ Watch Now </button>
+               <button class="s-modal-fav-btn">❤️Add Favorties</button>
+            </div>
+            
+        </div> 
+    </div>
+
+    <div class="modal" id="moviemodal">
+        <div class="modal-content">
+
+            <span class="close-btn" onclick="closeModal()">x</span>
+
+            <h2 id="modaltitle"></h2>
+            <br>
+            <h4 id="cbfc"></h4>
+            <h4 id="year"></h4>
+            <h4 id="genre"></h4>
+            <br>
+            <h4 id="runtime"></h4>
+            <br> 
+            <h4 id="imdb"></h4>
+            <br>
+            <p id="overview"></p>
+
+            <div class="modal-actions">
+               <button class="modal-play-btn">▶ Watch Now </button>
+               <button class="modal-fav-btn">❤️Add Favorties</button>
+            </div>
+            
+        </div> 
+    </div>
+    <script src="movies-data.js"></script>
+    <script src="series-data.js"></script>
+<script>
+  function openModal(movieId) {
+    const movie = movies[movieId];
+
+    document.getElementById("modaltitle").innerText = movie.title;
+    document.getElementById("cbfc").innerText = movie.cbfc;
+    document.getElementById("year").innerText = movie.year;
+    document.getElementById("genre").innerText = movie.genre;
+    document.getElementById("runtime").innerText = movie.runtime;
+    document.getElementById("imdb").innerText = movie.imdb;
+    document.getElementById("overview").innerText = movie.overview;
+    document.getElementById("moviemodal").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("moviemodal").style.display = "none";
+  }
+
+  function openseries(seriesId) {
+             const series = webseries[seriesId];
+
+             document.getElementById("s-modaltitle").innerText = series.stitle;
+             document.getElementById("s-year").innerText = series.syear;
+             document.getElementById("s-genre").innerText = series.sgenre;
+             document.getElementById("director").innerText = series.director;
+            document.getElementById("season").innerText = series.season;
+            document.getElementById("episodes").innerText = series.episodes;
+            document.getElementById("s-imdb").innerText = series.simdb;
+            document.getElementById("s-overview").innerText = series.soverview;
+            document.getElementById("s-moviemodal").style.display = "flex";
+  }
+
+  function closeseriesModal() {
+    document.getElementById("s-moviemodal").style.display = "none";
+  }
+
+</script>
+
+    <footer class="footer">
+        <p>© 2025 Cineflix · Subscriptions start at ₹299/year</p>
+    </footer>
+</body>
+</html>
