@@ -57,5 +57,52 @@ This project focuses on **frontend development**, UI/UX design, and JavaScript-b
 ---
 
 ## 📂 Project Structure
+Cineflix/
+├── index.html
+├── movies.html
+├── series.html
+├── style.css
+├── movies-data.js
+├── series-data.js
+├── images/
+│   ├── interstellar.jpg
+│   ├── avatar.jpg
+│   ├── moneyheist.jpg
+│   └── ...
+└── README.md
+
+---
+
+## ⚙️ Installation & Usage
+
+1. Clone the repository:
+
+git clone https://github.com/iamGokulraja/Cineflix.git
+
+
+
+Open index.html in your browser
+OR
+
+
+Visit the live link hosted on GitHub Pages
+
+
+🎯 Learning Outcomes
+
+Strong understanding of frontend fundamentals
+
+Improved JavaScript DOM manipulation
+
+Better UI/UX design practices
+
+Experience with GitHub & GitHub Pages deployment
+
+
+👨‍💻 Author
+Gokul Raja
+Frontend Developer
+Developed with ❤️ using HTML, CSS & JavaScript
+
 
 
